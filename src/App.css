@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+table {
+  margin: 0 auto;
+  border-spacing: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cell {
+  height: 70px;
+  width: 70px;
+  background-color: #2d88ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.white {
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.red {
+  height: 60px;
+  width: 60px;
+  background-color: #ff0040;
+  border-radius: 100px;
+}
+
+.yellow {
+  height: 60px;
+  width: 60px;
+  background-color: #ffea00;
+  border-radius: 100px;
+}
+
+.winner-message {
+  position: fixed;
+  align-self: center;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.bottom-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+
+.btn {
+  background: #768dd2;
   color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-color: transparent;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 520px) {
+  .cell {
+    height: 50px;
+    width: 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .white {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 100px;
+  }
+  .red {
+    height: 40px;
+    width: 40px;
+  }
+
+  .yellow {
+    height: 40px;
+    width: 40px;
+  }
+
+  .winner-message {
+    font-size: 5rem;
+    font-weight: 500;
   }
 }
